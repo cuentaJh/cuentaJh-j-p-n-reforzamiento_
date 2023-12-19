@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+
+{% block content %}
+
+    <P>Uso de ORM´s en DJANGO</P>
+
+    {% for pokemon in data %}
+        <li>
+            <p><strong>Nombre: </strong>{{ pokemon.nombre }} - <strong>Número: </strong>{{ pokemon.numero }} - <strong>Tipo: </strong>{{ pokemon.tipo }}</p>
+        </li>
+    {% endfor %}
+
+{% endblock %}

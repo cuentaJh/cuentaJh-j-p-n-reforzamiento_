@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+
+{% block content %}
+
+    <P>Uso de ORM´s en DJANGO</P>
+
+    {% for owner in data %}
+        <li>
+            <p><strong>Nombre: </strong>{{ owner.nombre }} - <strong>Edad: </strong>{{ owner.edad }} - <strong>País: </strong>{{ owner.pais }}</p>
+        </li>
+    {% endfor %}
+
+{% endblock %}

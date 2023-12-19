@@ -8,3 +8,4 @@ from .models import Owner
 @admin.register(Owner)
 class OwnerAdmin(admin.ModelAdmin):
     fields = ('nombre', 'pais', 'edad')
+    list_display = ('nombre', 'pais', 'edad')
